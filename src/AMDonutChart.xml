@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget id="mendix.amdonutchart.AMDonutChart" pluginWidget="true" needsEntityContext="true" offlineCapable="true"
+        supportedPlatform="Web"
+        xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
+    <name>AMDonut Chart</name>
+    <description>My widget description</description>
+    <icon/>
+    <properties>
+        <propertyGroup caption="General">
+            <property key="chartID" type="string" required="true">
+                <caption>ChartID</caption>
+                <description>Mandatory</description>
+            </property>
+              <property key="ChartValue"
+                      type="attribute">
+                <caption>ChartValue</caption>
+                <description>JSON Object</description>
+                <attributeTypes>
+                    <attributeType name="String" />
+                </attributeTypes>
+            </property>
+             <property key="width"
+                      type="integer"
+                      defaultValue="1000">
+                <caption>Width</caption>
+                <description>Percentage</description>
+            </property>
+            <property key="height"
+                      type="integer"
+                      defaultValue="1000">
+                <caption>Height</caption>
+                <description>Pixel</description>
+            </property>
+        </propertyGroup>
+    </properties>
+</widget>
